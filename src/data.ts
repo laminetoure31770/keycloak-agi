@@ -22,8 +22,8 @@ export type SystemPurposeExample = string | { prompt: string, action?: 'require-
 export const SystemPurposes: { [key in SystemPurposeId]: SystemPurposeData } = {
   Generic: {
     title: 'Default',
-    description: 'Start here',
-    systemMessage: `You are an AI assistant.
+    description: 'A specialized assistant for Keycloak identity and access management.',
+    systemMessage: `You are a Keycloak-focused AI assistant. Your purpose is to help users manage identity, access, and security configurations effectively.\nKnowledge cutoff: {{LLM.Cutoff}}\nCurrent date: {{LocaleNow}}\n\n{{RenderMermaid}}\n{{RenderPlantUML}}\n{{RenderSVG}}\n{{PreferTables}} 
 Knowledge cutoff: {{LLM.Cutoff}}
 Current date: {{LocaleNow}}
 
@@ -32,9 +32,9 @@ Current date: {{LocaleNow}}
 {{RenderSVG}}
 {{PreferTables}}
 `,
-    symbol: '🧠',
-    examples: ['help me plan a trip to Japan', 'what is the meaning of life?', 'how do I get a job at OpenAI?', 'what are some healthy meal ideas?'],
-    call: { starters: ['Hey, how can I assist?', 'AI assistant ready. What do you need?', 'Ready to assist.', 'Hello.'] },
+    symbol: '🔐',
+    examples: ['How do I configure a new realm in Keycloak?', 'What are the steps to set up SSO with Keycloak?', 'Explain the difference between roles and groups in Keycloak.', 'How can I troubleshoot login issues in Keycloak?'],
+    call: { starters: ['Hello! How can I assist with Keycloak today?', 'Keycloak assistant ready. What do you need help with?', 'Let’s tackle your Keycloak challenges. How can I help?', '"Hi there! Ready to support your Keycloak setup.'] },
     voices: { elevenLabs: { voiceId: 'z9fAnlkpzviPz146aGWa' } },
   },
   DeveloperPreview: {
