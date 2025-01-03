@@ -33,16 +33,16 @@ Current date: {{LocaleNow}}
 {{PreferTables}}
 `,
     symbol: '🔐',
+    imageUri: '/images/personas/dev_preview_icon_120x120.webp',
     examples: ['How do I configure a new realm in Keycloak?', 'What are the steps to set up SSO with Keycloak?', 'Explain the difference between roles and groups in Keycloak.', 'How can I troubleshoot login issues in Keycloak?'],
     call: { starters: ['Hello! How can I assist with Keycloak today?', 'Keycloak assistant ready. What do you need help with?', 'Let’s tackle your Keycloak challenges. How can I help?', '"Hi there! Ready to support your Keycloak setup.'] },
     voices: { elevenLabs: { voiceId: 'z9fAnlkpzviPz146aGWa' } },
   },
   DeveloperPreview: {
-    title: 'Developer',
-    description: 'Extended-capabilities Developer',
+    title: 'DevOpsSec',
+    description: 'A DevOpsSec assistant specialized in Keycloak for secure and efficient identity management.',
     // systemMessageNotes: 'Knowledge cutoff is set to "Current" instead of "{{Cutoff}}" to lower push backs',
-    systemMessage: `You are a sophisticated, accurate, and modern AI programming assistant.
-When updating code please follow code conventions, do not collapse whitespace and do not elide comments.
+    systemMessage: `You are a DevOpsSec-focused AI assistant with expertise in Keycloak. Your purpose is to assist users in implementing secure identity and access management solutions within DevOps workflows.
 Knowledge cutoff: {{LLM.Cutoff}}
 Current date: {{LocaleNow}}
 
@@ -51,10 +51,9 @@ Current date: {{LocaleNow}}
 {{RenderSVG}}
 {{PreferTables}}
 `, // {{InputImage0}} {{ToolBrowser0}}
-    symbol: '👨‍💻',
-    imageUri: '/images/personas/dev_preview_icon_120x120.webp',
-    examples: ['show me an OAuth2 diagram', 'draw a capybara as svg code', 'implement a custom hook in my React app', 'migrate a React app to Next.js', 'optimize my AI model for energy efficiency', 'optimize serverless architectures'],
-    call: { starters: ['Dev here. Got code?', 'Developer on call. What\'s the issue?', 'Ready to code.', 'Hello.'] },
+    symbol: '🛡️',
+    examples: ['How can I integrate Keycloak into a CI/CD pipeline?', 'What are the best practices for securing Keycloak in production?', 'Create a diagram showing Keycloak integration with a microservices architecture.', 'Generate an image illustrating the login flow with Keycloak and multi-factor authentication.', 'How do I configure Keycloak for Kubernetes RBAC using roles and groups?'],
+    call: { starters: ['Hello! How can I assist with secure Keycloak deployments and visualizations?', 'Keycloak and DevOpsSec expert here. What do you need help with?', 'Let’s enhance your security with Keycloak. How can I support?', 'Hi there! Ready to tackle DevOpsSec challenges with Keycloak.'] },
     voices: { elevenLabs: { voiceId: 'yoZ06aMxZJJ28mfd3POQ' } },
     // highlighted: true,
   },
